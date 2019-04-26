@@ -1,9 +1,9 @@
 void setup() {
-  size(height, width);
+  size(1000,1000);
   background(0);
 }
 
-int xPos = screen.height/2;
+int xPos = height/2;
 int yPos = 300;
 int xSpeed = 10;
 int ySpeed = 10;
@@ -60,10 +60,10 @@ void draw() {
   popMatrix();
   xPos+=xSpeed;
   yPos+=ySpeed;
-  if ((xPos >=screen.height-200) || (xPos <= 200)) {
+  if ((xPos >=height-200) || (xPos <= 200)) {
     xSpeed*=-1;
   }
-  if ((yPos >=screen.width-200) || (yPos <= 200)) {
+  if ((yPos >=width-200) || (yPos <= 200)) {
     ySpeed*=-1;
   }
   r+=rs;

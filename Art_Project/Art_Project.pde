@@ -43,20 +43,19 @@ void draw() {
    rect(i,0,20,20);
    //r = random(1,255); 
    }
-   popMatrix();
+   */
    popMatrix();
    pushMatrix();
    translate(mouseX,mouseY);
-   for(int i = 0; i < 200; i+=2){
+   for(int i = 0; i < 500; i+=1){
    rotate(-t);
    noStroke();
    fill(i*-2,i,i+200,200);  
-   ellipse(i,0,50,50);
+   ellipse(i,0,20,20);
    fill(i +200,i,i*-2,200);
-   rect(i,0,20,20);
+   rect(i,0,10,10);
    //r = random(1,255); 
    }
-   */
   popMatrix();
   xPos+=xSpeed;
   yPos+=ySpeed;
